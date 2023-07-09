@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    top: 0;
+}
+
+:root {
+    --cor-primaria: #667085;
+    --cor-secundaria: #8E2424;
+    --cor-terciaria: #101828;
+}
+
+body {
+    color: var(--cor-primaria);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+.none {
+    display: none;
+}
+
+nav {
+    display: flex;
+    width: 90em;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 80em;
+    padding: 0 2em;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.container__paginas {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style-type: none;
+    color: var(--cor-primaria);
+}
+
+.container__login {
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    gap: 12px;
+}
+
+.botao {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    color: white;
+}
+
+.container__paginas a, .container__login a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container__paginas a:hover, .container__login a:hover {
+    transition: 1s;
+    color: var(--cor-secundaria);
+}
+
+.botao:hover {
+    transition: 1s;
+    background-color: white;
+}
+
+/* Cabeçalho */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.about-us span {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    margin-top: 6em;
+}
+
+.about-us h2 {
+    font-size: 3em;
+    color: var(--cor-terciaria);
+    font-weight: 600;
+
+}
+
+.about-us p {
+    font-size: 1.25em;
+    font-weight: 400;
+    width: 55%;
+    margin-bottom: 6em;
+    line-height: 1.5em;
+}
+
+/* Métricas */
+
+.container-metricas {
+    display: flex;
+    text-align: flex-start;
+    gap: 2em;
+    padding: 32px;
+    margin: 0 80px 96px 80px;
+}
+
+.container-metricas span {
+    color: var(--cor-secundaria);
+    font-size: 3.75em;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.container-metricas h2 {
+    color: var(--cor-terciaria);
+    font-size: 18px;    
+    font-weight: 500;
+    margin-bottom: 8px;
+}
