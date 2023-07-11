@@ -9,6 +9,8 @@
     --cor-primaria: #667085;
     --cor-secundaria: #8E2424;
     --cor-terciaria: #101828;
+    --cinza900: #101828;
+    --cor-fundo: rgba(195, 25, 25, 0.03);
 }
 
 body {
@@ -155,4 +157,85 @@ nav {
 .container-talentos p {
     font-size: 20px;
     margin-bottom: 64px;
+}
+
+/* Contratos */
+
+.container__contratos {
+    margin: 64px 336px 96px 336px;
+}
+
+.container__contratos h2{
+    margin-bottom: 32px;
+    color: var(--cinza900);
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 64px;
+}
+
+.container__contratos-design {
+    border: 1px solid var(--cor-primaria);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+.container__contratos-design h3 {
+    font-size: 18px;
+    color: var(--cinza900);
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.container__contratos-design p{
+    font-weight: 500;
+}
+
+.container__contratos-texto {
+    display: flex;
+    gap: 24px;
+}
+
+/* Depoimentos */
+
+.container__depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-fundo);
+    border-radius: 16px;
+    /* margin: 0px 112px 96px 112px; */
+    margin: 0 8% 8% 8%;
+    padding: 64px;
+    text-align: center;
+}
+
+.container__depoimentos-img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 20px;
+}
+
+.container__depoimentos h2{
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px
+}
+
+.container__depoimentos-citacao {
+    color: var(--cinza900);
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 32px;
+}
+
+.container__depoimentos-nome {
+    color: var(--cinza900);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.container__desenvolvimento-job {
+    font-size: 14px;
 }
